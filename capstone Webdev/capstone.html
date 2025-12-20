@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Fashion E-Commerce Landing Page</title>
+    <link rel="stylesheet" href="./capstone.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <span class="logo">FASHIONISTA</span>
+        <div class="nav-search">
+          <input type="text" placeholder="Search for products..." />
+        </div>
+      </div>
+
+      <div class="hamburger" id="hamburger">☰</div>
+      <div class="nav-right" id="navMenu">
+        <a href="#" class="nav-icon" title="Cart"><img src="https://imgs.search.brave.com/UmnwnTahmicNgB-F06OuT5XVaheCAWFh3Lr6WGo3xTs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDYv/NjkyLzUzOC9zbWFs/bC9zaG9wcGluZy10/cm9sbGV5LWNhcnQt/YmxhY2stbGluZS1z/aWxob3VldHRlLWZs/YXQtaWNvbi1vbi13/aGl0ZS1iYWNrZ3Jv/dW5kLWZyZWUtdmVj/dG9yLmpwZw" alt="cart" height="40px"></a>
+        <a href="#" class="nav-icon" title="Login"><img src="https://imgs.search.brave.com/W4oJIJ6bNbzTzK-Y5zMqTv5HMeblKwpd7vzgfjk4P34/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzUv/NjI0LzA4Mi9zbWFs/bC91c2VyLXByb2Zp/bGUtcGVyc29uLWlj/b24taW4tZmxhdC1p/c29sYXRlZC1pbi1z/dWl0YWJsZS1mb3It/c29jaWFsLW1lZGlh/LW1hbi1wcm9maWxl/cy1zY3JlZW5zYXZl/cnMtZGVwaWN0aW5n/LW1hbGUtZmFjZS1z/aWxob3VldHRlcy1m/b3ItYXBwcy13ZWJz/aXRlLXZlY3Rvci5q/cGc" alt="profile" height="40px"></a>
+        <a href="#" class="nav-login">Login</a>
+      </div>
+    </nav>
+
+    <!-- Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Winter Sale is Here!</h1>
+        <p class="hero-desc">
+          Up to 50% off on selected styles. Refresh your wardrobe with the latest trends.
+        </p>
+        <button class="hero-cta">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Flash Sale -->
+    <div class="flash-sale">
+      <span> Flash Sale: Extra 20% OFF! Ends in</span>
+      <div class="countdown" id="countdown">
+        <span id="hours">02</span>: <span id="minutes">15</span>:
+        <span id="seconds">42</span>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <!-- Filters  -->
+      <aside class="sidebar">
+        <h3>Filters</h3>
+        <div class="filter-group">
+          <strong>Category</strong>
+          <label><input type="checkbox" /> Men</label>
+          <label><input type="checkbox" /> Women</label>
+          <label><input type="checkbox" /> Accessories</label>
+        </div>
+        <div class="filter-group">
+          <strong>Price</strong>
+          <label><input type="checkbox" /> Under $50</label>
+          <label><input type="checkbox" /> $50 - $100</label>
+          <label><input type="checkbox" /> $100+</label>
+        </div>
+        <div class="filter-group">
+          <strong>Color</strong>
+          <label><input type="checkbox" /> Black</label>
+          <label><input type="checkbox" /> White</label>
+          <label><input type="checkbox" /> Blue</label>
+        </div>
+      </aside>
+
+      <!-- Main Section -->
+      <main class="main-section">
+        <!-- Categories -->
+        <section>
+          <div class="categories">
+            <!-- Men -->
+            <div class="category-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/side_menu_image/Untitled-1_3.jpg?w=100&dpr=1"
+                alt="Men"
+              />
+              <div class="category-title">Men</div>
+            </div>
+            <!-- Women -->
+            <div class="category-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/side_menu_image/200_x_198_1_n9uOpbp.jpg?w=360&dpr=1"
+                alt="Women"
+              />
+              <div class="category-title">Women</div>
+            </div>
+            <!-- Accessories -->
+            <div class="category-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/access_VfkzAxP.jpg?w=480&dpr=1"
+                alt="Accessories"
+              />
+              <div class="category-title">Accessories</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Product -->
+        <section>
+          <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1764409731_6902445.jpg?w=480&dpr=1"
+                alt="Product 1"
+              />
+              <div class="product-title">Classic Denim Jacket</div>
+              <div class="product-price">$79.99</div>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/b7_copy_AghQYLg.jpg?w=480&dpr=1"
+                alt="Product 2"
+              />
+              <div class="product-title">Men's White Sneakers</div>
+              <div class="product-price">$59.99</div>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1761888868_2472114.jpg?w=480&dpr=1"
+                alt="Product 3"
+              />
+              <div class="product-title">Women's Winter Dress</div>
+              <div class="product-price">$49.99</div>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="product-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1762249437_3196330.jpg?w=900&dpr=1"
+                alt="Product 4"
+              />
+              <div class="product-title">Leather Handbag</div>
+              <div class="product-price">$120.00</div>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Best Seller -->
+        <section class="best-seller-section">
+          <div class="best-seller-title">Best Sellers</div>
+          <div class="best-seller-grid">
+            <!-- Best Seller 1 -->
+            <div class="product-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1763636658_8833731.jpg?w=480&dpr=1"
+                alt="Best Seller 1"
+              />
+              <div class="product-title">Denim Jacket</div>
+              <div class="product-price">$79.99</div>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+            <!-- Best Seller 2 -->
+            <div class="product-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/5_4_npRaJON.jpg?w=360&dpr=1"
+                alt="Best Seller 2"
+              />
+              <div class="product-title">White Sneakers</div>
+              <div class="product-price">$59.99</div>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+            <!-- Best Seller 3 -->
+            <div class="product-card">
+              <img
+                src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1764224944_2135417.jpg?w=480&dpr=1"
+                alt="Best Seller 3"
+              />
+              <div class="product-title">Winter Dress</div>
+              <div class="product-price">$49.99</div>
+              <button class="product-btn">Add to Cart</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+          <div class="testimonials-title">What Our Customers Say</div>
+          <div class="testimonial-list">
+            <div class="testimonial-card">
+              <img
+                class="testimonial-avatar"
+                src="https://imgs.search.brave.com/9LqMeZeFKm6zTzFtn357pZJpXK-Mq-MOGrHaGNIbNrE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi82LzY3L0Ny/aXN0aWFub19Sb25h/bGRvXzIyNzVfJTI4/Y3JvcHBlZCUyOS5q/cGcvNTEycHgtQ3Jp/c3RpYW5vX1JvbmFs/ZG9fMjI3NV8lMjhj/cm9wcGVkJTI5Lmpw/Zw"
+                alt="Customer 1"
+              />
+              <div class="testimonial-name">Krishna Ronalda</div>
+              <div class="testimonial-text">
+                "Absolutely love the quality and fast shipping! My new favorite store."
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <img
+                class="testimonial-avatar"
+                src="https://imgs.search.brave.com/EkiUbs5G7YNp0W_rlVVGtfmB7CZIQ4WYMUPPA4OTl5Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8xLzE2L09m/ZmljaWFsX1ByZXNp/ZGVudGlhbF9Qb3J0/cmFpdF9vZl9QcmVz/aWRlbnRfRG9uYWxk/X0ouX1RydW1wXyUy/ODIwMjUlMjkuanBn/LzUxMnB4LU9mZmlj/aWFsX1ByZXNpZGVu/dGlhbF9Qb3J0cmFp/dF9vZl9QcmVzaWRl/bnRfRG9uYWxkX0ou/X1RydW1wXyUyODIw/MjUlMjkuanBn"
+                alt="Customer 2"
+              />
+              <div class="testimonial-name">Donald D.</div>
+              <div class="testimonial-text">
+                "Great selection and amazing deals. The flash sale was a steal!"
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <img
+                class="testimonial-avatar"
+                src="https://imgs.search.brave.com/Kht3KwcC7I4vU_zTf56-acWYP_HMgsimKsCyGfblzMU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1ETTVNemxs/TnpNdE4yUXhOaTAw/WVdKaUxUaGtOekF0/WXpJM1pXRTRNV1ps/TmpOa1hrRXlYa0Zx/Y0djQC5qcGc"
+                alt="Customer 3"
+              />
+              <div class="testimonial-name">Lokesh Mishra</div>
+              <div class="testimonial-text">
+                "Customer service was super helpful. Will definitely shop
+                again."
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Newsletter-->
+        <section class="newsletter">
+          <div class="newsletter-title">Stay in the Loop!</div>
+          <div class="newsletter-desc">
+            Sign up for exclusive offers, new arrivals, and more.
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-col">
+        <div class="footer-title">Account</div>
+        <ul class="footer-list">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">Wishlist</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Help</div>
+        <ul class="footer-list">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Policies</div>
+        <ul class="footer-list">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">Follow Us</div>
+        <div class="footer-socials">
+          <a href="#" title="Instagram"><img src="https://imgs.search.brave.com/dcA6HoMq8xgv1RMMYSkOttiJlTgEYIiQ41kuYWUeCpk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE2/NjY0MDg3MzgxODgt/MjEyYzQ3MGQwOGIw/P2l4bGliPXJiLTQu/MS4wJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4Tm54/OGFXNXpkR0ZuY21G/dEpUSXdhV052Ym54/bGJud3dmSHd3Zkh4/OE1BPT0mZm09anBn/JnE9NjAmdz0zMDAw" alt="instagram" height="40px"></a>
+          <a href="#" title="Facebook"><img src="https://imgs.search.brave.com/S9obb0HgQBC-YlhvkfOtVxkEoiKtzQDdiTdXnrLjYcc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8xNTA1OS8xNTA1/OTc2OS5wbmc_c2Vt/dD1haXNfd2hpdGVf/bGFiZWw" alt="facebook" height="40px"></a>
+          <a href="#" title="X"><img src="https://imgs.search.brave.com/BgxREOBn0TS0afTETH4aKH2rXLv7pznxPNF4hcPNvI0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LXR3aXR0ZXIteC1p/Y29uLXN2Zy1kb3du/bG9hZC1wbmctNzc0/MDY0Ny5wbmc_Zj13/ZWJwJnc9MjU2" alt="X" height="40px"></a>
+          <a href="#" title="Pinterest"><img src="https://imgs.search.brave.com/VlR5wKESc8tTh3uoG6s84fM-j0TvfSubAL-E4_eQCOo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8xNTA1OS8xNTA1/OTc5My5wbmc_c2Vt/dD1haXNfd2hpdGVf/bGFiZWw" alt="Pinterest" height="35px" ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Fashionista. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
