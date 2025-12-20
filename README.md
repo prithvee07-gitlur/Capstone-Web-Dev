@@ -1,66 +1,62 @@
-# Capstone-Web-Dev
 # FASHIONISTA - E-Commerce Capstone Project
 
-**Project Name:** FASHIONISTA [cite: 1]  
-**Author:** Prithvi [cite: 1]  
-**Course:** Computer Science (B. Tech CSE) [cite: 1]  
-**University:** K.R. Mangalam University [cite: 1, 2]  
-[cite_start]**Date:** December 14, 2025 [cite: 2]
+**Project Name:** FASHIONISTA  
+**Author:** Prithvi  
+**Course:** Computer Science (B. Tech CSE)  
+**University:** K.R. Mangalam University  
+**Date:** December 14, 2025
 
 ---
 
 ## 1. Project Overview
-The objective of this assignment was to build a fully structured, responsive e-commerce web interface using HTML5 and CSS3[cite: 2]. [cite_start]"FASHIONISTA" is a landing page designed for a fashion e-commerce theme, allowing users to browse clothing collections, view flash sales, and read testimonials[cite: 3]. [cite_start]The design prioritizes a high-contrast visual hierarchy, ease of navigation, and clear calls to action[cite: 4].
+The objective of this assignment was to build a fully structured, responsive e-commerce web interface using HTML5 and CSS3. "FASHIONISTA" is a landing page designed for a fashion e-commerce theme, allowing users to browse clothing collections, view flash sales, and read testimonials. The design prioritizes a high-contrast visual hierarchy, ease of navigation, and clear calls to action.
 
 ## 2. Design Decisions & Visual Style
 
 ### Color Palette
-[cite_start]A high-contrast monochrome scheme was utilized to create a modernistic, premium feel[cite: 5].
-* [cite_start]**Primary Colors:** Black (`#222`) and White (`#fff`) for main UI elements and readability[cite: 6].
-* [cite_start]**Accent Color:** Vibrant Red (`#ff4d4f`) for the "Flash Sale" banner and discount pricing to draw attention[cite: 7].
+A high-contrast monochrome scheme was utilized to create a modernistic, premium feel.
+* **Primary Colors:** Black (`#222`) and White (`#fff`) are used for main UI elements to ensure text readability and a clean aesthetic.
+* **Accent Color:** A vibrant Red (`#ff4d4f`) is used for the "Flash Sale" banner, discount pricing, and hover states to draw immediate user attention.
 
 ### Typography
-* [cite_start]**Font Family:** "Montserrat" (imported from Google Fonts)[cite: 8].
-* [cite_start]**Usage:** Used across the entire document to provide a geometric, modern look suitable for a fashion brand[cite: 9].
+* **Font Family:** "Montserrat" (imported from Google Fonts).
+* **Usage:** Used across the entire document (body, headings) to provide a geometric, modern look suitable for a fashion brand.
 
 ### Visual Effects
-* [cite_start]**Sticky Navigation:** The navbar is set to `position: sticky` with a z-index and box-shadow to remain accessible during scrolling[cite: 10].
-* [cite_start]**Hover States:** Product and category cards utilize `transform: scale` and increased box-shadows to create a "lifting" effect[cite: 11].
-* [cite_start]**Image Overlays:** The Hero section uses a dark RGBA overlay (`rgba(0, 0, 0, 0.45)`) to ensure white text remains legible against background images[cite: 12].
+* **Sticky Navigation:** The navbar is set to `position: sticky` with a z-index and box-shadow, ensuring it remains accessible as the user scrolls.
+* **Hover States:** Interactive elements like product and category cards utilize `transform: scale` and increased box-shadows to create a "lifting" effect.
+* **Image Overlays:** The Hero section utilizes a dark RGBA overlay (`rgba(0, 0, 0, 0.45)`) to ensure the white "Winter Sale" text remains legible against the busy background.
 
 ## 3. Structural Implementation (HTML5)
-[cite_start]Semantic HTML5 practices were followed to ensure a logical document flow[cite: 13]:
-* [cite_start]**`<nav>`:** Contains the logotype, search bar, and user account links[cite: 13].
-* [cite_start]**`<main>`:** Wraps primary content, separating the Sidebar and Main Section from the header and footer[cite: 14].
-* [cite_start]**`<aside>`:** Used for the "Filters" sidebar (Category, Price, Color checkboxes)[cite: 15].
-* [cite_start]**`<section>`:** Divides the page into thematic areas like the Hero Banner, Product Grid, and Testimonials[cite: 16].
-* [cite_start]**`<footer>`:** Organized into a grid layout for links (Account, Help, Policies)[cite: 17].
+Semantic HTML5 practices were followed to ensure a logical document flow:
+* **`<nav>`:** Contains the logotype, search bar, and user account links, serving as the primary navigation controller.
+* **`<main>`:** Wraps the primary page content, including the Sidebar and the Main Section, separating it from the footer and header.
+* **`<aside>`:** Used for the "Filters" sidebar, semantically indicating that this content (Category, Price, Color checkboxes) is related to but distinct from the main product grid.
+* **`<section>`:** Divides the page into distinct thematic areas such as the Hero Banner, Product Grid, Best Sellers, and Testimonials.
+* **`<footer>`:** Organized into a grid layout containing links for Account, Help, Policies, and social media.
 
-## 4. Layout & Responsiveness
-[cite_start]The layout adapts to different screen sizes using CSS Media Queries, Grid, and Flexbox[cite: 18].
+## 4. Responsiveness Strategy
+The layout adapts to different screen sizes using CSS Media Queries and flexible units:
 
-### Grid & Flexbox Strategy
-* [cite_start]**Grid Layouts:** Product and Best Seller grids use `grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))` to allow automatic wrapping without specific breakpoints[cite: 18, 19].
-* [cite_start]**Flexbox:** The main container uses Flexbox to align the Sidebar and Main Section side-by-side on desktop[cite: 20].
+### Grid & Flexbox
+* **Grid Layouts:** The Product and Best Seller grids use `grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))`. This ensures product cards automatically wrap and resize based on available width without requiring specific breakpoints.
+* **Flexbox Layouts:** The main content container uses Flexbox. On desktop, it aligns the Sidebar and Main Section side-by-side.
 
 ### Media Queries
-* [cite_start]**Tablet (Max-width 1100px):** The flex direction switches to column, moving the Sidebar to the top of the content for better usability[cite: 21, 22].
-* [cite_start]**Mobile (Max-width 768px):** Detailed navigation links are toggled off, and a Hamburger menu becomes visible to conserve space[cite: 23].
+* **Tablet (Max-width 1100px):** The Flex direction of the main content switches to column, moving the Sidebar to the top of the content for better usability.
+* **Mobile (Max-width 768px):** The detailed navigation links display is toggled off, and the Hamburger menu becomes visible to conserve screen space.
 
 ## 5. Challenges & Solutions
 
 | Challenge | Solution |
 | :--- | :--- |
-| [cite_start]**Hero Text Readability:** Ensuring text was readable regardless of image brightness[cite: 28]. | [cite_start]Implemented a `.hero-overlay` div with a semi-transparent black background positioned behind the text[cite: 29]. |
-| [cite_start]**Mobile Footer:** Making the footer look consistent on mobile vs. desktop[cite: 30]. | [cite_start]Utilized CSS Grid with `repeat(auto-fit, minmax(180px, 1fr))` to allow columns to stack automatically[cite: 31]. |
-| [cite_start]**Sidebar on Small Screens:** Handling sidebar filters where horizontal space is limited[cite: 32]. | [cite_start]A media query at 1100px forces the sidebar to take 100% width, stacking it above products to maintain accessibility[cite: 33]. |
+| **Hero Text Readability:** Ensuring text on the Hero background was readable regardless of image brightness. | Implemented a `.hero-overlay` div with a semi-transparent black background positioned absolutely over the image but behind the text. |
+| **Mobile Footer:** Making the Footer look consistent on mobile devices versus desktop. | Utilized CSS Grid for the footer with `repeat(auto-fit, minmax(180px, 1fr))`, allowing columns to stack automatically on smaller screens without complex floats. |
+| **Sidebar on Small Screens:** Handling sidebar filters where horizontal space is limited. | A media query at 1100px forces the sidebar to take 100% width, effectively stacking it above the products to maintain accessibility. |
 
-## 6. Key Learning Outcomes
-Through developing this Capstone project, practical experience was gained in:
-* [cite_start]**Advanced Positioning:** Using `position: sticky` for navigation[cite: 24].
-* [cite_start]**Complex Layouts:** Combining fixed sidebars (`flex: 0 0 220px`) with fluid content areas (`flex: 1`)[cite: 25].
-* [cite_start]**Styling Forms:** Customizing input fields (e.g., rounded search bars) to match brand identity[cite: 26].
-* [cite_start]**Interactive Design:** implementing CSS transitions for responsive UI feedback[cite: 27].
-
----
-[cite_start]*This project demonstrates a strong understanding of CSS Grid, Flexbox, and semantic HTML structure suitable for a modern web application[cite: 36].*
+## 6. Learning Outcomes
+Through the development of the "FASHIONISTA" Capstone project, practical experience was gained in:
+* **Advanced Positioning:** Using `position: sticky` effectively for persistent navigation.
+* **Complex Box Model & Layouts:** Combining `flex: 0 0 220px` for fixed sidebars and `flex: 1` for fluid content areas.
+* **Styling Form Elements:** Styling input fields (e.g., rounded search bars with `border-radius: 20px`) to match brand identity.
+* **Interactive Design:** Exploring CSS transitions (`transition: width 0.3s, transform 0.2s`) to make the UI feel responsive.
