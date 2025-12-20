@@ -1,16 +1,16 @@
 # Capstone-Web-Dev
 # FASHIONISTA - E-Commerce Capstone Project
 
-[cite_start]**Project Name:** FASHIONISTA [cite: 1]  
-[cite_start]**Author:** Prithvi [cite: 1]  
-[cite_start]**Course:** Computer Science (B. Tech CSE) [cite: 1]  
-**University:** K.R. [cite_start]Mangalam University [cite: 1, 2]  
+**Project Name:** FASHIONISTA [cite: 1]  
+**Author:** Prithvi [cite: 1]  
+**Course:** Computer Science (B. Tech CSE) [cite: 1]  
+**University:** K.R. Mangalam University [cite: 1, 2]  
 [cite_start]**Date:** December 14, 2025 [cite: 2]
 
 ---
 
 ## 1. Project Overview
-[cite_start]The objective of this assignment was to build a fully structured, responsive e-commerce web interface using HTML5 and CSS3[cite: 2]. [cite_start]"FASHIONISTA" is a landing page designed for a fashion e-commerce theme, allowing users to browse clothing collections, view flash sales, and read testimonials[cite: 3]. [cite_start]The design prioritizes a high-contrast visual hierarchy, ease of navigation, and clear calls to action[cite: 4].
+The objective of this assignment was to build a fully structured, responsive e-commerce web interface using HTML5 and CSS3[cite: 2]. [cite_start]"FASHIONISTA" is a landing page designed for a fashion e-commerce theme, allowing users to browse clothing collections, view flash sales, and read testimonials[cite: 3]. [cite_start]The design prioritizes a high-contrast visual hierarchy, ease of navigation, and clear calls to action[cite: 4].
 
 ## 2. Design Decisions & Visual Style
 
